@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo App</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Login</header>
+        <form action="/login" method="post">
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter your username"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <a href="#">Forgot password?</a>
+          <a href="#"
+            ><input type="button" name="login" class="button" value="Login"
+          /></a>
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Don't have an account?
+            <label for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Signup</header>
+        <form action="post">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter your first Name"
+          />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Enter your last name"
+          />
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter your preferred username"
+          />
+          <input type="text" name="email" placeholder="Enter your email" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Create a password"
+          />
+
+          <a href="#"
+            ><input type="button" name="signup" class="button" value="Signup"
+          /></a>
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Already have an account?
+            <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
