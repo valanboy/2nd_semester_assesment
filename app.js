@@ -4,14 +4,11 @@ const mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
 
-const mongodbUrl = process.env.mongodbUrl;
+const mongodbUrl = process.env.mongodbUrl
 const port = process.env.port ||3000;
 
 // conenction to mongodb
-mongoose.connect(mongodbUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(mongodbUrl);
 
 
 
